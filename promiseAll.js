@@ -5,9 +5,7 @@ function promiseAll(promises) {
                 for (const promise of promises) {
                     returnValues.push(await promise);
                 }
-        } else {
-            return [];
-        }
+        } 
         return returnValues;
     }
     return getValues(promises);  
